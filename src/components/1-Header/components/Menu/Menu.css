@@ -1,0 +1,120 @@
+/* =====================
+
+  1. Menu
+
+  2. Responsive Design
+
+===================== */
+
+/* =====================
+  1. Menu
+===================== */
+
+.menu {
+  padding-top: 20px;
+  padding-bottom:  1.5rem;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li a span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--title);
+  text-transform: capitalize;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.menu ul li a:hover span {
+  color: var(--promary-color);
+}
+
+
+.menu-mobile {
+  display: none;
+}
+
+/* =====================
+  2. Responsive Design
+===================== */
+
+
+@media (max-width: 992px) {
+
+  .menu {
+    display: none;
+  }
+
+  .menu-mobile {
+    /* display: block; */
+    background-color: var(--bg-menu);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .menu-mobile ul   {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 0.6rem;
+    margin: 0;
+    padding: 0;
+  }
+  .menu-mobile ul li {
+    text-align: center;
+  }
+  .menu-mobile ul li a span {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--title);
+    text-transform: capitalize;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .menu-mobile ul li a span:hover {
+    color: var(--promary-color);
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .menu-mobile {
+    /* display: block; */
+    background-color: var(--bg-menu);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .menu-mobile ul   {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 0.6rem;
+    margin: 0;
+    padding: 0;
+  }
+  .menu-mobile ul li {
+    text-align: center;
+  }
+  .menu-mobile ul li a span {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--title);
+    text-transform: capitalize;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+}

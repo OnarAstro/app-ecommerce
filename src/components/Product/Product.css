@@ -1,0 +1,332 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top:  50px;
+}
+
+.product .title-product {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  color: var(--title);
+}
+
+.product .box-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.product .box-filter .box-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product .box-filter .box-product button {
+  padding: 10px 10px;
+  /* border: none; */
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--sub-title);
+  text-transform: capitalize;
+}
+.product .box-filter .box-product button.active {
+  color: var(--promary-color);
+}
+
+.product .box-filter .box-product button:hover {
+  color: var(--promary-color);
+}
+
+.product .box-filter .btn-filter {
+  background-color: var(--bg-btn-color);
+  color: var(--light);
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  text-transform: capitalize;
+}
+
+.product .box-filter .btn-filter:hover {
+  background-color: var(--promary-color);
+}
+
+.product .box-filter .btn-filter:hover .FaFilter {
+  font-size: 1rem;
+}
+
+.product .box-card {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.product .box-card #card {
+  background-color: var(--bg-color);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.216);
+  /* transition: 0.3s; */
+}
+
+.product .box-card #card .img-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.product .box-card #card .img-card .box-hover {
+  position: absolute;
+  bottom: -50%;
+  /* bottom: 0; */
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  background-color: var(--bg-btn-color);
+  transition: 0.3s all ease-in-out;
+}
+
+.product .box-card #card:hover .img-card .box-hover {
+  bottom: 0;
+}
+
+.product .box-card #card .img-card .box-hover .icons-hover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+
+.product .box-card #card .img-card .box-hover .icons-hover .CiHeart {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--light);
+  cursor: pointer;
+}
+.product .box-card #card .img-card .box-hover .icons-hover .CiHeart:hover {
+  color: var(--promary-color);
+}
+
+.product .box-card #card .img-card .box-hover .icons-hover .IoIosSearch {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--light);
+  cursor: pointer;
+}
+
+.product .box-card #card .img-card .box-hover .icons-hover .IoIosSearch:hover {
+  color: var(--promary-color);
+}
+
+.product .box-card #card .img-card .box-hover .btn-hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 100%;
+}
+
+.product .box-card #card .img-card .box-hover .btn-hover .FaBagShopping {
+  font-size: 1.3rem;
+  color: var(--light);
+  cursor: pointer;
+}
+
+.product .box-card #card .img-card .box-hover .btn-hover span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--light);
+  cursor: pointer;
+}
+
+.product .box-card #card .img-card .box-hover .btn-hover:hover span {
+  color: var(--promary-color);
+}
+
+
+.product .box-card #card .title-card {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--title);
+  text-transform: capitalize;
+}
+
+.product .box-card .box-btn.btn1 span {
+  color: var(--sub-title);
+
+}
+
+
+.product .box-card .box-btn.btn2 span {
+  color: var(--title);
+  font-weight: 500;
+}
+
+.product .box-card #card:hover .box-btn.btn1 span  {
+  color: var(--promary-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .product .box-card #card {
+    width: 100%;
+    width: 15rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+
+
+  .product .title-product {
+    font-size: 1.3rem;
+  }
+
+
+  .product .box-filter .box-product {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+
+  .product .box-filter .box-product button {
+    padding: 5px 5px;
+    font-size: 0.6rem;
+    font-weight: 500;
+  }
+
+  .product .box-filter .btn-filter {
+    padding: 3px 7px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    gap: 3px;
+  }
+
+
+  .product .box-filter .btn-filter:hover .FaFilter {
+    font-size: 0.7rem;
+  }
+
+
+  .product .box-card #card {
+    /* width: 100% !important; */
+    width: 45% !important;
+  }
+
+
+
+
+
+  .product .box-card #card .img-card .box-hover {
+    
+    height: 2.5rem;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  
+  .product .box-card #card .img-card .box-hover .icons-hover {
+    gap: 1rem;
+    height: 100%;
+  }
+  
+  
+  .product .box-card #card .img-card .box-hover .icons-hover .CiHeart {
+    font-size: 1rem;
+  }
+  
+  .product .box-card #card .img-card .box-hover .icons-hover .IoIosSearch {
+    font-size: 1rem;
+  }
+  
+  .product .box-card #card .img-card .box-hover .btn-hover {
+    gap: 0.5rem;
+  }
+  
+  .product .box-card #card .img-card .box-hover .btn-hover .FaBagShopping {
+    font-size: 1rem;
+  }
+  
+  .product .box-card #card .img-card .box-hover .btn-hover span {
+    font-size: 0.6rem;
+  }
+
+
+
+
+
+
+
+
+  .product .box-card #card .card-body {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+
+  .product .box-card #card .title-card {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--title);
+    padding-top: 5px !important;
+  }
+
+  .product .box-card .box-btn span {
+    font-size: 0.8rem;
+  }
+
+
+
+
+
+
+
+
+}

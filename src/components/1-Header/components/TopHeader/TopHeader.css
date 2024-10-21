@@ -1,0 +1,332 @@
+/* =====================
+
+  1. Top Header
+
+  2. Search
+
+  3. Box-Logo
+
+  4. Box-Icons
+
+  5. Responsive Design
+===================== */
+
+/* =====================
+  1. Top Header
+===================== */
+.top-header {
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-b);
+}
+
+/* =====================
+  2. Search
+===================== */
+
+.top-header .search {
+  /* background-color: #f5f5f5; */
+  padding: 5px;
+}
+
+
+.top-header .search .CgSearch {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--title);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.top-header .search .CgSearch:hover {
+  color: var(--promary-color);
+}
+
+
+/* =====================
+  3. Box-Logo
+===================== */
+
+.top-header .box-logo {
+  padding: 5px;
+  margin-left: 10%;
+  /* margin-right: auto; */
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.5rem !important;
+
+}
+
+.top-header .box-logo img {
+  width: 180px;
+  cursor: pointer;
+}
+
+
+/* =====================
+  3. Footer One Icon
+===================== */
+
+.top-header .box-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.top-header .box-logo img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  object-position: center;
+  transition: 0.3s ease-in-out;
+}
+
+.top-header .box-logo:hover img {
+  transform: scale(1.1);
+}
+
+.top-header .box-logo h3 {
+  font-size: 2rem;
+  color: var(--title);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--font-logo);
+  /* font-family: 'Times New Roman', Times, serif; */
+  margin: 0;
+}
+
+
+
+/* =====================
+  4. Box-Icons
+===================== */
+
+.top-header .box-icons {
+  padding: 5px;
+  gap: 10px;
+}
+
+.top-header .box-icons .box-Account {
+  padding: 5px;
+  /* margin-right: 10px; */
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.top-header .box-icons .box-Account .FaUserLarge {
+  font-size: 1rem;
+  color: var(--title);
+}
+
+.top-header .box-icons .box-Account span {
+  font-size: 1rem;
+  color: var(--title);
+  text-transform: capitalize;
+  transition: 0.3s ease-in-out;
+}
+
+.top-header .box-icons .box-Account:hover span {
+  color: var(--promary-color);
+}
+
+.top-header .box-icons .box-Shopping {
+  padding: 5px !important;
+  gap: 5px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+}
+
+.top-header .box-icons .box-Shopping .FaShoppingBag {
+  font-size: 1rem;
+  color: var(--title);
+}
+
+.top-header .box-icons .box-Shopping span {
+  font-size: 1rem;
+  color: var(--title);
+  text-transform: capitalize;
+  transition: 0.3s ease-in-out;
+}
+.top-header .box-icons .box-Shopping:hover span {
+  color: var(--promary-color);
+}
+
+
+/* =====================
+  5. Responsive Design
+===================== */
+
+@media (max-width: 992px) {
+  /* =====================
+  2. Search
+  ===================== */
+
+  .top-header .search .CgSearch {
+    font-size: 1.2rem;
+  }
+
+/* =====================
+  3. Box-Logo
+===================== */
+
+.top-header .box-logo img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.top-header .box-logo h3 {
+  font-size: 2rem;
+}
+
+
+  /* =====================
+  4. Box-Icons
+===================== */
+
+  .top-header .box-icons .box-Account .FaUserLarge {
+    font-size: 0.9rem;
+  }
+
+  .top-header .box-icons .box-Account span {
+    font-size: 0.9rem;
+  }
+
+  .top-header .box-icons .box-Shopping .FaShoppingBag {
+    font-size: 0.9rem;
+  }
+
+  .top-header .box-icons .box-Shopping span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* =====================
+  2. Search
+  ===================== */
+
+  .top-header .search .CgSearch {
+    font-size: 1.2rem;
+  }
+
+/* =====================
+  3. Box-Logo
+===================== */
+
+.top-header .box-logo img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.top-header .box-logo h3 {
+  font-size: 1.5rem;
+}
+
+
+  /* =====================
+  4. Box-Icons
+===================== */
+
+  .top-header .box-icons .box-Account .FaUserLarge {
+    font-size: 0.9rem;
+  }
+
+  .top-header .box-icons .box-Account span {
+    font-size: 0.9rem;
+  }
+
+  .top-header .box-icons .box-Shopping .FaShoppingBag {
+    font-size: 0.9rem;
+  }
+
+  .top-header .box-icons .box-Shopping span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+
+
+  /* =====================
+  1. Top Header
+===================== */
+  .top-header {
+    padding-top: 10px;
+
+    padding-bottom: 10px;
+    justify-content: space-between;
+  }
+
+  /* =====================
+  2. Search
+===================== */
+
+  .top-header .search {
+    padding-left: 2px;
+  }
+  
+  .top-header .search .CgSearch {
+    font-size: 1.1rem;
+    display: none;
+  }
+
+  /* =====================
+  3. Box-Logo
+===================== */
+
+.top-header .box-logo img {
+  width: 1rem;
+  height: 1rem;
+}
+
+
+.top-header .box-logo h3 {
+  font-size: 1rem;
+}
+
+  /* =====================
+  4. Box-Icons
+===================== */
+
+  .top-header .box-icons {
+    padding: 2px;
+    gap: 7px;
+  }
+
+  .top-header .box-icons .box-Account {
+    padding: 2px;
+    gap: 5px;
+  }
+
+  .top-header .box-icons .box-Account .FaUserLarge {
+    font-size: 0.8rem;
+  }
+
+  .top-header .box-icons .box-Account span {
+    font-size: 0.8rem;
+  }
+
+  .top-header .box-icons .box-Shopping {
+    padding: 2px;
+    gap: 5px;
+  }
+
+  .top-header .box-icons .box-Shopping .FaShoppingBag {
+    font-size: 0.8rem;
+  }
+
+  .top-header .box-icons .box-Shopping span {
+    font-size: 0.8rem;
+  }
+}

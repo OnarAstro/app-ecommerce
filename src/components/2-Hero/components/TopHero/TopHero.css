@@ -1,0 +1,320 @@
+/* =====================
+
+  1. Top Hero
+
+  2. Top Hero Text
+
+  3. Top Hero Img
+
+  5. Responsive Design
+===================== */
+
+
+
+/* =====================
+  1. Top Hero
+===================== */
+
+.top-hero {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 0 !important;
+  height: 75vh;
+  padding-top: 50px !important;
+  margin-bottom: 10px;
+}
+
+/* =====================
+  2. Top Hero Text
+===================== */
+
+.top-hero .top-hero-text {
+  padding: 0;
+  padding-top: 70px;
+  margin-right: 3rem;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.top-hero .top-hero-text h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  color: var(--title);
+  margin-bottom: 1rem;
+}
+
+.top-hero .top-hero-text p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--title);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.top-hero .top-hero-text .top-hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.5rem !important;
+  color: var(--light) !important;
+  background-color: var(--promary-color) !important;
+  border: none !important;
+  padding: 0.8rem 1.9rem !important;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-transform: capitalize;
+}
+
+.top-hero .top-hero-text .top-hero-btn:hover {
+  background-color: var(--bg-btn-color) !important;
+  /* color: var(--title) !important; */
+}
+
+/* =====================
+  3. Top Hero Img
+===================== */
+
+.top-hero .top-hero-img {
+  width: 470;
+  height: 570px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-img);
+  border-radius: 40% 0% 40% 0%;
+  margin-top: 1rem;
+}
+
+.top-hero .top-hero-img img {
+  position: relative;
+  z-index: 1;
+  right: 1rem;
+  bottom: 1rem;
+  width: 470px;
+  height: 570px;
+  object-fit: cover;
+  border-radius: 40% 0% 40% 0%;
+}
+
+
+/* ===================== 
+  4. Hero Bg
+=====================  */
+
+.hero-bg {
+  position: absolute;
+  z-index: -1;
+  background-image: url("Frame1.png");
+  width: 200px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 25%;
+  right: 0;
+}
+
+.hero-bg2 {
+  position: absolute;
+  z-index: -1;
+  background-image: url("Frame2.png");
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 25%;
+  left: 0;
+}
+
+
+
+
+/* =====================
+  5. Responsive Design
+===================== */
+
+@media screen and (max-width: 1200px) {
+  /* =====================
+  3. Top Hero Img
+===================== */
+
+  .top-hero .top-hero-img {
+    width: 400px;
+    height: 500px;
+  }
+
+  .top-hero .top-hero-img img {
+    width: 400px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* =====================
+  2. Top Hero Text
+===================== */
+
+  .top-hero .top-hero-text {
+    padding: 0;
+    padding-top: 70px;
+    margin-right: 3rem;
+    gap: 1rem;
+  }
+
+  .top-hero .top-hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .top-hero .top-hero-text p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+
+  .top-hero .top-hero-text .top-hero-btn {
+    gap: 0.9rem;
+    font-size: 1.2rem !important;
+    padding: 0.8rem 1.8rem !important;
+  }
+
+  /* =====================
+  3. Top Hero Img
+===================== */
+
+  .top-hero .top-hero-img {
+    width: 350px;
+    height: 450px;
+  }
+
+  .top-hero .top-hero-img img {
+    width: 350px;
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* =====================
+  2. Top Hero Text
+===================== */
+
+  .top-hero .top-hero-text {
+    padding: 0;
+    padding-top: 50px;
+    margin-right: 2rem;
+    gap: 0.8rem;
+  }
+
+  .top-hero .top-hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .top-hero .top-hero-text p {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+
+  .top-hero .top-hero-text .top-hero-btn {
+    gap: 0.5rem;
+    font-size: 1rem !important;
+    padding: 0.8rem 1.7rem !important;
+  }
+
+  /* =====================
+  3. Top Hero Img
+===================== */
+
+  .top-hero .top-hero-img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .top-hero .top-hero-img img {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* =====================
+  2. Top Hero Text
+===================== */
+
+  .top-hero {
+    padding-top: 50px !important;
+    margin-bottom: 0px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .top-hero .top-hero-text {
+    padding: 0;
+    padding-top: 50px;
+    margin-right: 1rem;
+    gap: 1rem;
+  }
+
+  .top-hero .top-hero-text h1 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .top-hero .top-hero-text p {
+    font-size: 1.5rem;
+    color: var(--sub-title);
+    font-weight: 300;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+
+  .top-hero .top-hero-text .top-hero-btn {
+    gap: 0.5rem;
+    font-size: 1rem !important;
+    padding: 0.8rem 1.7rem !important;
+  }
+
+  /* =====================
+  3. Top Hero Img
+===================== */
+
+  .top-hero .top-hero-img {
+    width: 120px;
+    height: 250px;
+  }
+
+  .top-hero .top-hero-img img {
+    width: 120px;
+    height: 250px;
+    right: 0.4rem;
+    bottom: 0.4rem;
+  }
+
+  /* ------------------
+  4. Hero Bg
+--------------------- */
+
+  .hero-bg {
+    width: 150px;
+    height: 250px;
+    bottom: 15%;
+  }
+
+  .hero-bg2 {
+    position: absolute;
+    z-index: -1;
+    background-image: url("Frame2.png");
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 10%;
+    left: 0;
+  }
+}

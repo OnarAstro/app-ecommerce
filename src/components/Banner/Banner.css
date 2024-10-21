@@ -1,0 +1,159 @@
+.banner {
+  background-image: url("/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 3rem;
+  padding-right: 18rem !important;
+  padding-left: 65rem !important;
+  padding-top: 9rem !important;
+}
+
+.banner img {
+  width: 200px;
+  transition: 0.3s ease-in-out;
+}
+
+.banner p {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: var(--light);
+  text-transform: capitalize;
+}
+
+.banner button {
+  background-color: var(--light);
+  color: var(--dark);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 1px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-transform: capitalize;
+}
+
+.banner button:hover {
+  background-color: var(--promary-color);
+}
+
+
+@media (max-width: 1600px) {
+  .banner {
+    padding-right: 10rem !important;
+    padding-left: 50rem !important;
+  }
+
+  .banner p {
+    font-size: 1.5rem;
+  }
+
+  .banner button {
+    font-size: 1.5rem;
+  }
+
+  .banner img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .banner {
+    padding-right: 5rem !important;
+    padding-left: 40rem !important;
+  }
+
+  .banner p {
+    font-size: 1.3rem;
+  }
+
+  .banner button {
+    font-size: 1.3rem;
+  }
+
+  .banner img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 992px) {
+  .banner {
+    height: 70vh;
+    padding-top: 7rem !important;
+    padding-right: 5rem !important;
+    padding-left: 25rem !important;
+  }
+
+  .banner p {
+    font-size: 1.2rem;
+  }
+
+  .banner button {
+    font-size: 1.2rem;
+  }
+
+  .banner img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 60vh;
+    padding-right: 5rem !important;
+    padding-left: 20rem !important;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner {
+    background-position: left;
+    height: 50vh;
+    padding-right: 3rem !important;
+    padding-left: 5rem !important;
+    padding-top: 0rem !important;
+    gap: 1.6rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .banner button {
+    font-size: 1rem;
+  }
+
+  .banner img {
+    width: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .banner {
+    background-position: left;
+    padding-right: 2rem !important;
+    padding-left: 5rem !important;
+
+  }
+
+  .banner p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .banner button {
+    font-size: 0.9rem;
+  }
+
+  .banner img {
+    width: 70px;
+  }
+}

@@ -1,0 +1,316 @@
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75vh;
+  width: 100%;
+  padding: 0 !important;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.details .box-details-img {
+  height: 75vh;
+  width: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-left:  12%; */
+  position: relative;
+  overflow: hidden ;
+  box-shadow:  var(--shadow);
+  border-radius: 1rem;
+}
+.details .box-details-img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: rotate(45deg) translate(68%, 13%);
+  transition: 0.3s ease-in-out;
+}
+
+.details .box-details-img:hover::after {
+  transform: rotate(45deg) translate(150%, 13%);
+}
+
+.details .box-details-img::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: rotate(45deg) translate(-67.5%, -10%);
+  transition: 0.3s ease-in-out;
+}
+
+.details .box-details-img:hover:before {
+  transform: rotate(45deg) translate(-150.5%, -0%);
+}
+
+
+.details .box-details-img img {
+  width: 50vh;
+  height: 75vh; 
+  object-fit: cover;
+  object-position: top;
+
+}
+
+
+
+.details .text-details {
+  height: 60vh;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  box-shadow:  var(--shadow);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 1rem;
+}
+
+.details .text-details .category-details {
+  height: 5vh;
+}
+
+.details .text-details .category-details p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--sub-title);
+  text-transform: uppercase;
+
+}
+
+
+.details .text-details .title-details h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--title);
+  text-transform: uppercase;
+}
+
+
+.details .text-details .desc-details p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--sub-title);
+  text-transform: capitalize;
+
+}
+
+.details .text-details .btn-details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  gap: 3rem;
+}
+
+
+.details .text-details .btn-details .add-details {
+  width: 150px;
+  /* height: 5vh; */
+  /* border: none; */
+  /* background-color: var(--promary-color); */
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 500;
+  color: var(--title);
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius:  0.5rem 0.5rem 0.5rem 0.5rem;
+  box-shadow:  0px 0px 10px 0px rgba(0, 0, 0, 0.216);
+  transition: 0.3s ease-in-out;
+}
+
+.details .text-details .btn-details .add-details:hover {
+  background-color: var(--bg-btn-color);
+  color: var(--light);
+}
+
+.details .text-details .btn-details .add-details:focus {
+  outline: none;
+}
+
+.details .text-details .btn-details .add-details:active {
+  scale: 0.9;
+}
+
+
+.details .text-details .btn-details .buy-details {
+  width: 100px;
+  /* height: 5vh; */
+  /* border: none; */
+  background-color: var(--promary-color);
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 500;
+  color: var(--light);
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius:  0.5rem 0.5rem 0.5rem 0.5rem;
+  box-shadow:  0px 0px 10px 0px rgba(0, 0, 0, 0.216);
+  transition: 0.3s ease-in-out;
+}
+
+.details .text-details .btn-details .buy-details:hover {
+  background-color: unset;
+  color: var(--title);
+}
+.details .text-details .btn-details .buy-details:focus {
+  outline: none;
+
+}
+.details .text-details .btn-details .buy-details:active {
+  scale: 0.9;
+}
+
+
+
+/*=================================
+  Media Queries (Responsive)
+===================================*/
+
+@media (max-width: 1200px) {
+  
+}
+
+@media (max-width: 992px) {
+  .details {
+    gap: 2rem;
+  }
+  .details .box-details-img {
+    width: 100%;
+    height: 60vh;
+  }
+  .details .box-details-img img {
+    width: 100%;
+    height: 60vh;
+  }
+  .details .text-details {
+    width: 100%;
+    height: 50vh;
+    gap: 1;
+    margin: 0;
+
+  }
+
+
+
+
+
+  }
+
+
+
+@media (max-width: 768px) {
+  .details {
+    gap: 2rem;
+  }
+  .details .box-details-img {
+    width: 100%;
+    height: 60vh;
+  }
+  .details .box-details-img img {
+    width: 100%;
+    height: 60vh;
+  }
+  .details .text-details {
+    width: 100%;
+    height: 45vh;
+  }
+
+  .details .text-details .title-details h3 {
+    font-size: 2rem;
+  }
+  .details .text-details .desc-details p {
+    font-size: 1rem;
+  }
+  .details .text-details .category-details p {
+    font-size: 1rem;
+  }
+  .details .text-details .category-details {
+    height: 3vh;
+}
+.details .text-details .btn-details {
+
+  justify-content: center;
+gap: 1rem;
+}
+
+.details .text-details .btn-details .add-details {
+  width: 100px;
+}
+
+.details .text-details .btn-details .buy-details {
+  width: 75px;
+}
+
+
+}
+
+@media (max-width: 576px) {
+  .details {
+    margin-top: 0;
+    margin-bottom: 0;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    overflow: hidden;
+  }
+  .details .box-details-img {
+    width: 90%;
+    height: 50vh;
+  }
+  .details .box-details-img img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: top;
+
+  }
+  .details .text-details {
+    width: 90%;
+    height: 36vh;
+    /* padding: ; */
+  }
+
+  .details .text-details .title-details h3 {
+    font-size: 1.5rem;
+  }
+  .details .text-details .desc-details p {
+    font-size: 1rem;
+  }
+  .details .text-details .category-details p {
+    font-size: 1rem;
+  }
+  .details .text-details .btn-details {
+    justify-content: space-around;
+  }
+
+  .details .text-details .btn-details .add-details {
+    width: 80px;
+    font-size: 0.9rem;
+    /* height: 4vh; */
+  }
+  
+  .details .text-details .btn-details .buy-details {
+    width: 70px;
+    font-size:  0.8rem;
+    /* height: 4vh; */
+  }
+
+  .details .text-details .category-details {
+    height: 2vh;
+}
+
+} 

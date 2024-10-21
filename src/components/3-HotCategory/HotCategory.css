@@ -1,0 +1,312 @@
+/* =====================
+
+  1. Hot Category
+
+  2. Title Category Left
+
+  3. Box-Category
+
+  4. Box-Left
+  
+  5. Box-Right
+  
+  6. Box Text
+
+  7. Responsive Design
+===================== */
+
+/* =====================
+  1. Hot Category
+===================== */
+
+.hot-category {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin-bottom: 100px;
+}
+
+/* =====================
+  2. Title Category Left
+===================== */
+
+.hot-category .title-category-left {
+  /* height: 350px; */
+  width: 230px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--title);
+  text-transform: uppercase;
+  rotate: -90deg;
+  position: absolute;
+  left: 0;
+}
+
+/* =====================
+  3. Box-Category
+===================== */
+
+.hot-category .box-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  padding: 0 !important;
+}
+
+/* =====================
+  4. Box-Left
+===================== */
+
+.hot-category .box-category .box-left {
+  background-image: url("/hot.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 50%;
+  padding: 0 !important;
+  border-radius: 4px;
+}
+
+.hot-category .box-category .box-left .hot-box-text::after {
+  height: 4rem;
+}
+
+.hot-category .box-category .box-left .hot-box-text p {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+/* =====================
+  5. Box-Right
+===================== */
+
+.hot-category .box-category .box-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 50%;
+  height: 100%;
+  padding: 0 !important;
+}
+
+.hot-category .box-category .box-right .box-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  padding: 0 !important;
+}
+
+.hot-category .box-category .box-right .box-top .box-img1 {
+  background-image: url("/hot1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 50%;
+  padding: 0 !important;
+  border-radius: 4px;
+}
+
+.hot-category .box-category .box-right .box-top .box-img2 {
+  background-image: url("/hot2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 50%;
+  padding: 0 !important;
+  border-radius: 4px;
+}
+
+.hot-category .box-category .box-right .box-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  padding: 0 !important;
+}
+
+.hot-category .box-category .box-right .box-bottom .box-img3 {
+  background-image: url("/hot3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 50%;
+  padding: 0 !important;
+  border-radius: 4px;
+}
+
+.hot-category .box-category .box-right .box-bottom .box-img4 {
+  background-image: url("/hot4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 50%;
+  padding: 0 !important;
+  border-radius: 4px;
+}
+
+.hot-category .box-category .box-right .hot-box-text p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+/* =====================
+  6. Box Text
+===================== */
+
+.hot-category .hot-box-text {
+  width: 100%;
+  height: 100%;
+  padding: 0 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1rem;
+  color: var(--light);
+  text-transform: capitalize;
+  position: relative;
+  z-index: 11;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.hot-category .hot-box-text:hover {
+  opacity: 1;
+}
+
+.hot-category .hot-box-text p {
+  z-index: 11;
+}
+
+.hot-category .hot-box-text::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3rem;
+  background-color: var(--bg-btn-color);
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* ===========================
+  7. Media Query (Responsive)
+============================== */
+
+@media (max-width: 1650px) {
+  .hot-category .title-category-left {
+    width: 300px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--title);
+    text-transform: uppercase;
+    rotate: -90deg;
+    position: absolute;
+    left: -100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hot-category {
+    height: 100vh;
+  }
+  .hot-category .box-category {
+    flex-direction: column;
+    margin-right: 1rem;
+  }
+
+  .hot-category .box-category .box-left {
+    width: 100%;
+  }
+
+  .hot-category .box-category .box-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .hot-category .title-category-left {
+    /* display: none; */
+    position: sticky;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hot-category {
+    flex-direction: column;
+  }
+  .hot-category .title-category-left {
+    /* display: none; */
+    position: sticky;
+    font-size: 1rem;
+    width: 100%;
+    rotate: 0deg;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .hot-category .box-category {
+    margin-right: auto;
+  }
+  .hot-category .box-category .box-left {
+    width: 95%;
+  }
+
+  .hot-category .box-category .box-right {
+    padding-left: 25px !important;
+    padding-right: 27px !important;
+    gap: 1rem;
+  }
+
+  .hot-category .box-category .box-right .box-top {
+    gap: 1rem;
+  }
+
+  .hot-category .box-category .box-right .box-bottom {
+    gap: 1rem;
+  }
+
+  .hot-category .box-category .box-right .hot-box-text p {
+    font-size: 0.7rem;
+    margin-bottom: 0.4rem;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+
+  .hot-category .hot-box-text::after {
+    height: 2rem;
+  }
+
+  .hot-category .box-category .box-left .hot-box-text::after {
+    height: 3.3rem;
+  }
+
+  .hot-category .box-category .box-left .hot-box-text p {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .hot-category {
+    margin-bottom: 50px;
+  }
+}

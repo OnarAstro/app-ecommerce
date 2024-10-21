@@ -1,0 +1,365 @@
+
+
+/* ===============
+  0. Footer 
+================ */
+
+.footer {
+
+}
+
+/* =====================
+  1. Footer Top
+===================== */
+
+.footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding-top: 50px;
+  gap: 1.5rem;
+
+}
+
+/* =====================
+  2. Footer One
+===================== */
+
+.footer .footer-top .footer-one {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: start;
+flex: 1.1;
+gap: 1.5rem;
+margin-right: 1.5rem;
+}
+
+/* =====================
+  3. Footer One Icon
+===================== */
+
+.footer .footer-top .footer-one .footer-one-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.footer .footer-top .footer-one .footer-one-icon img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  object-position: center;
+  transition: 0.3s ease-in-out;
+}
+
+.footer .footer-top .footer-one .footer-one-icon:hover img {
+  transform: scale(1.1);
+}
+
+.footer .footer-top .footer-one .footer-one-icon h3 {
+  font-size: 2rem;
+  color: var(--title);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--font-logo);
+  margin: 0;
+}
+
+/* =====================
+  4. Footer One Text
+===================== */
+
+.footer .footer-top .footer-one .footer-one-text {
+
+}
+
+.footer .footer-top .footer-one .footer-one-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--sub-title);
+  font-weight: 400;
+  /* margin: 0; */
+  text-transform: capitalize;
+}
+
+/* =====================
+  5. Footer One Icons
+===================== */
+
+.footer .footer-top .footer-one .footer-one-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer .footer-top .footer-one .footer-one-icons .FaFacebookF,
+.footer .footer-top .footer-one .footer-one-icons .FaTwitter,
+.footer .footer-top .footer-one .footer-one-icons .FaLinkedinIn,
+.footer .footer-top .footer-one .footer-one-icons .FaInstagram
+{
+  font-size: 1.5rem;
+  color: var(--title);
+  transition: 0.3s ease-in-out;
+}
+
+.footer .footer-top .footer-one .footer-one-icons .FaFacebookF:hover,
+.footer .footer-top .footer-one .footer-one-icons .FaTwitter:hover,
+.footer .footer-top .footer-one .footer-one-icons .FaLinkedinIn:hover,
+.footer .footer-top .footer-one .footer-one-icons .FaInstagram:hover
+{
+  color: var(--promary-color);
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+  background-color:  var(--bg-color);
+  border-radius: 50%;
+  padding: 0.2rem;
+  border: 1px solid var(--promary-color);
+  box-shadow: 0 0 10px var(--promary-color);
+}
+
+
+/* =====================
+  6. Footer Two
+===================== */
+
+.footer .footer-top .footer-two-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex: 2;
+  gap: 1.5rem;
+}
+
+
+.footer .footer-top .footer-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  flex: 1;
+  gap: 1.1rem;
+}
+
+.footer .footer-top .footer-two .footer-two-title {
+  text-align: start;
+
+}
+
+.footer .footer-top .footer-two .footer-two-title h3 {
+  font-size: 1.1rem;
+  color: var(--title);
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* =====================
+  7. Footer Two Text
+===================== */
+
+.footer .footer-top .footer-two .footer-two-text {
+  text-align: start;
+}
+
+.footer .footer-top .footer-two .footer-two-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--sub-title);
+  font-weight: 500;
+  margin: 0.5rem 0;
+  text-transform: capitalize;
+  transition: 0.3s ease-in-out;
+}
+
+.footer .footer-top .footer-two .footer-two-text p:hover {
+  color: var(--promary-color);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+
+/* =====================
+  8. Footer Bottom
+===================== */
+
+
+.footer .footer-bottom {
+  padding: 0.8rem 0;
+  border-top: 1px solid var(--border-b);
+  margin-top: 3rem;
+  background-color: var(--bg-btn-color);
+}
+
+.footer .footer-bottom .footer-bottom-box {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer .footer-bottom .footer-bottom-box .footer-bottom-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer .footer-bottom .footer-bottom-box .footer-bottom-left p {
+  font-size: 1rem;
+  color: var(--light);
+  font-weight: 400;
+  margin: 0;
+}
+
+.footer .footer-bottom .footer-bottom-box .footer-bottom-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer .footer-bottom .footer-bottom-box .footer-bottom-center img {
+  width: 18rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.footer .footer-bottom .footer-bottom-box .footer-bottom-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+} 
+
+.footer .footer-bottom .footer-bottom-box .footer-bottom-right p {
+  font-size: 1.05rem;
+  color: var(--light);
+  font-weight: 500;
+  margin: 0;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.footer .footer-bottom .footer-bottom-box .footer-bottom-right p:hover {
+  color: var(--promary-color);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.footer .footer-bottom .footer-bottom-box .footer-bottom-right p .IoArrowUpOutline {
+  font-size: 1.2rem;
+  color: var(--light);
+  transition: 0.3s ease-in-out;
+  animation: up 1s infinite;
+}
+@keyframes up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+/* =================================
+  Responsive (Media Queries)
+================================== */
+
+@media (max-width: 992px) {
+
+  .footer .footer-top .footer-two .footer-two-title h3 {
+    font-size: 1rem;
+  }
+
+  .footer .footer-top .footer-two .footer-two-title h3  {
+    font-size: 1rem;
+  }
+
+  .footer .footer-top .footer-two {
+    gap: 0.5rem;
+  }
+
+  .footer .footer-top .footer-one {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .footer .footer-top{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .footer .footer-bottom .footer-bottom-box .footer-bottom-left p {
+    font-size: 0.9rem;
+  }
+
+  .footer .footer-bottom .footer-bottom-box .footer-bottom-center img {
+    width: 15rem;
+  }
+
+  .footer .footer-bottom .footer-bottom-box .footer-bottom-right p {
+    font-size: 0.9rem;
+  }
+  .footer .footer-bottom .footer-bottom-box .footer-bottom-right p .IoArrowUpOutline {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer .footer-top .footer-two-container {
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    gap: 3rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+  }
+
+  .footer .footer-top .footer-two  {
+    padding-left: 1rem;
+    flex: none;
+  }
+  .footer .footer-top .footer-one  {
+    padding-left: 1rem;
+  }
+
+
+  .footer .footer-bottom .footer-bottom-box .footer-bottom-left p {
+    font-size: 0.5rem;
+  }
+
+  .footer .footer-bottom .footer-bottom-box .footer-bottom-center img {
+    width: 10rem;
+  }
+
+  .footer .footer-bottom .footer-bottom-box .footer-bottom-right p {
+    font-size: 0.5rem;
+  }
+  .footer .footer-bottom .footer-bottom-box .footer-bottom-right p .IoArrowUpOutline {
+    font-size: 0.5rem;
+  }
+
+}

@@ -1,0 +1,154 @@
+/* 
+
+=====================
+  table of contents
+=====================
+1. fonts ===> google fonts
+2. html
+3. Theme
+4. Scrollbar
+5. animation
+6. Responsive Design (Media Queries)
+
+*/
+
+/* =====================
+  1. fonts ===> google fonts
+===================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* =====================
+  2. html
+===================== */
+html {
+  letter-spacing: 0.1px;
+  scrollbar-color: var(--promary-color) #3d4a59;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+/* =====================
+  3. Start Theme
+===================== */
+
+:root {
+  /* --bg-color: #272a2b;  */
+  --bg-color: #121212;
+  --bg-color2: #41414152;
+  --title: #ffff;
+  --border-b: gray;
+  --bg-btn-color: #697e92;
+  --sub-title: rgba(255, 255, 255, 0.75);
+  --promary-color: #ff6f61;
+
+  --border-img : #61676d;
+
+  --bg-brand-color: #ffffff;
+
+  --color-btn: #000000;
+
+  --light : #ffff;
+  --dark : #000000;
+
+  --font-logo:  'Times New Roman', Times, serif;
+
+  --shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.216);
+  --shadow2: 0px 0px 10px 0px rgba(255, 255, 255, 0.1);
+}
+
+.light {
+  --bg-color: #ffff;
+  --bg-color2: #f4f4f4;
+  --title: #000000;
+  --border-b: rgba(224, 224, 224, 0.568);
+  --bg-btn-color: #1e2832;
+  --color-btn: #ffff;
+  --sub-title: rgba(0, 0, 0, 0.75);
+  --promary-color: #ff6f61;
+
+  --border-img : #728496;
+
+  --bg-brand-color: #1e283200;
+
+  --light : #ffffff;
+  --dark : #000000;
+  --shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.216);
+  --shadow2: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background-color: var(--bg-color) !important;
+  color: var(--title) !important;
+}
+
+a {
+  all: unset !important;
+  cursor: pointer;
+}
+
+ul {
+  all: unset;
+}
+
+li {
+  all: unset !important;
+  cursor: pointer;
+}
+
+button {
+  all: unset;
+  cursor: pointer !important;
+}
+
+.border-red {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+
+.active {
+  color: var(--promary-color) !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease-in-out;
+  animation: animation  0.5s ease-in-out 1 forwards; 
+}
+
+@keyframes animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* ========================= 
+  4. Scrollbar
+=============================*/
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  border: 7px solid #232943;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #faeeee;
+}
